@@ -149,14 +149,15 @@ Custom property | Description | Default
     </style>
 
     <div class="header">
-      <iron-image
-          hidden$="[[!image]]"
-          aria-hidden$="[[_isHidden(image)]]"
-          src="[[image]]"
-          alt="[[alt]]"
-          placeholder="[[placeholderImage]]"
-          preload="[[preloadImage]]"
-          fade="[[fadeImage]]"></iron-image>
+      <a href="[[image]]">
+        <iron-image
+            hidden$="[[!image]]"
+            aria-hidden$="[[_isHidden(image)]]"
+            src="[[image]]"
+            alt="[[alt]]"
+            placeholder="[[placeholderImage]]"
+            preload="[[preloadImage]]"
+            fade="[[fadeImage]]"></iron-image></a>
       <div hidden$="[[!heading]]" class$="title-text [[_computeHeadingClass(image)]]">[[heading]]</div>
     </div>
 
