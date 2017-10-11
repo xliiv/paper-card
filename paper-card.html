@@ -149,7 +149,7 @@ Custom property | Description | Default
     </style>
 
     <div class="header">
-      <a href="[[image]]">
+      <a href="[[fullImage]]">
         <iron-image
             hidden$="[[!image]]"
             aria-hidden$="[[_isHidden(image)]]"
@@ -182,6 +182,14 @@ Custom property | Description | Default
          * The url of the title image of the card.
          */
         image: {
+          type: String,
+          value: ''
+        },
+
+        /**
+         * The url of the title image shown after click.
+         */
+        fullImage: {
           type: String,
           value: ''
         },
